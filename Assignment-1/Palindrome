@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n,i,k,r;
+    cout<<"Enter a number:-";
+    cin>>n;
+    for(i=n;i>0;i=i/10){
+        r=i%10;
+        k=k*10+r;
+    }
+    if(n==k)
+      cout<<"Entered number is palindrome";
+     else
+      cout<<"Entered number is not palindrome";  
+}
