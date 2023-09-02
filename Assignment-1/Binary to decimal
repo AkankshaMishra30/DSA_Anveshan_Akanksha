@@ -1,0 +1,18 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main(){
+    long bin,temp;
+    int dec=0,p=0,num;
+    cout<<"Enter a binary number:";
+    cin>>bin;
+    temp=bin;
+    while(bin>0){
+        num=bin%10;
+        dec=dec+num*pow(2,p);
+        p++;
+        bin=bin/10;
+    }
+    cout<<"\nThe decimal of "<<temp<<" is:- "<<dec;
+}
