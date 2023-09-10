@@ -22,7 +22,7 @@ using namespace std;
    cout<<"\nCount of total set bits in a number are: "<<count;
 }
 int main(){
-   int number = 50;
+   int number = 75;
    bits(number);
    return 0;
 }
